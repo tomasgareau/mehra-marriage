@@ -1,0 +1,133 @@
+---
+layout: _container.html
+title: tomas & aparajita
+---
+
+<div class="w-full">
+  <div class="max-w-3xl mx-auto">
+
+    <div class="bg-red-900 py-1 px-2">
+      <h1 class="text-sm text-white">Venue Details</h1>
+    </div>
+
+    <div class="mt-2 mx-3">
+      <p class="text-lg text-yellow-700">Best Western Resort Country Club</p>
+      <p class="text-xs text-gray-600">Pachgaon, Major District Road 132, near Manesar, Gurugram, Haryana 122015,
+        India</p>
+      <iframe class="max-w-md"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d259604.65456242868!2d76.85280828835619!3d28.300527018862592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d3c47c271138f%3A0xb369ea996c4d7b67!2sBest%20Western%20Resort%20Country%20Club!5e0!3m2!1sen!2sca!4v1690687414396!5m2!1sen!2sca"
+        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <h2 class="text-lg text-yellow-700 mt-5 mb-1">Getting There</h2>
+      <p class="text-sm text-gray-800">The venue is a 1.5 hour drive from the heart of Delhi.</p>
+      <p class="text-sm text-gray-800">You can rent a car or use a rideshare app. See the FAQ for more info on car
+        travel!
+      </p>
+
+      <h2 class="text-lg text-yellow-700 mt-5 mb-1">Check-in/Check-out Times</h2>
+      <p class="text-sm text-gray-800">We'll be organizing early check-in & late check-out for wedding guests.
+      <p class="text-sm text-gray-800 italic font-bold">Check in <span class="font-normal">10AM</span></p>
+      <p class="text-sm text-gray-800 italic font-bold">Check out <span class="font-normal">1PM</span></p>
+
+      <h2 class="text-lg text-yellow-700 mt-5 mb-1">Meal Times</h2>
+      <p class="text-sm text-gray-800">Feel free to swing by the hotel buffet between events if you're feeling hungry!
+      </p>
+      <p class="text-sm text-gray-800 italic font-bold">Breakfast <span class="font-normal">7AM-11AM</span></p>
+      <p class="text-sm text-gray-800 italic font-bold">Lunch <span class="font-normal">12PM-3PM</span></p>
+      <p class="text-sm text-gray-800 italic font-bold">Dinner <span class="font-normal">6PM-9PM</span></p>
+
+      <h2 class="text-lg text-yellow-700 mt-5 mb-1">Amenities/Activities</h2>
+      <p class="text-sm text-gray-800">Between scheduled events, feel free to check out the following activities
+        available
+        at the resort.</p>
+      <p class="text-sm text-gray-800 italic font-bold">PLACEHOLDER TEXT</p>
+      <p class="text-sm text-gray-800 italic font-bold">PLACEHOLDER TEXT</p>
+      <p class="text-sm text-gray-800 italic font-bold">PLACEHOLDER TEXT</p>
+      <p class="text-sm text-gray-800 italic font-bold">PLACEHOLDER TEXT</p>
+    </div>
+
+    <div class="bg-red-900 py-1 px-2 mt-6">
+      <p class="text-sm text-white">Itinerary</p>
+    </div>
+
+    <div class="mt-2 mx-3">
+      <p class="text-sm text-gray-800 mt-4">Wondering what to wear for these events? <a
+          class="underline hover:font-semibold hover:italic" href="/faq/#clothing">Check out the FAQ!</a></p>
+
+      <div class="flex flex-row justify-center border-b border-yellow-700 mb-4 mt-6">
+        <h2 class="text-xl text-yellow-700 font-light">Thursday, October 12</h2>
+      </div>
+      <ol class="">
+        {% event "Check-in" "10AM" %}
+        <p class="text-sm text-gray-800">
+          Arrive at the venue anytime after 10AM. Settle into your room, have lunch, and play lawn games with the other
+          guests!
+        </p>
+        {% endevent %}
+
+        {% event "Mehndi" "5PM" %}
+        <p class="text-sm text-gray-800">
+          Kick off the celebrations with henna, folk dances, and food! This event will be Diwali themed to introduce our out-of-country guests to this Indian festival.
+        </p>
+        <p class="text-xs text-emerald-800 italic">Attire: Indian or western, green & earth tones</p>
+        <p class="text-xs text-emerald-800 italic">Theme: Diwali</p>
+        {% endevent %}
+      </ol>
+
+      <div class="flex flex-row justify-center border-b border-yellow-700 mb-4 mt-6">
+        <h2 class="text-xl text-yellow-700 font-light">Friday, October 13</h2>
+      </div>
+      <ol class="">
+        {% event "Haldi" "11AM" %}
+        <p class="text-sm text-gray-800">
+          Anoint the bride and groom with a paste of turmeric so they glow on their wedding day and get a taste of Holi,
+          the festival of colours.
+        </p>
+        <p class="text-xs text-emerald-800 italic">Attire: Indian or western, yellow tones</p>
+        <p class="text-xs text-emerald-800 italic">Theme: Holi</p>
+        {% endevent %}
+
+        {% event "Baraat" "5PM" %}
+        <p class="text-sm text-gray-800">
+          The groom's side will arrive at the wedding venue in a boisterous parade.
+        </p>
+        <p class="text-xs text-emerald-800 italic">Attire: Indian or western, colourful and sparkly. Something you can dance in later!</p>
+        {% endevent %}
+
+        {% event "Shaadi" "6PM" %}
+        <p class="text-sm text-gray-800">
+          A traditional Indian wedding ceremony to make it official (again).
+        </p>
+        {% endevent %}
+
+        {% event "Sangeet" "7PM" %}
+        <p class="text-sm text-gray-800">
+          An evening of songs, dance, and -- you guessed it -- more food. This is when you'll be showcasing your best
+          Bollywood performances!
+        </p>
+        {% endevent %}
+      </ol>
+
+      <div class="flex flex-row justify-center border-b border-yellow-700 mb-4 mt-6">
+        <h2 class="text-xl text-yellow-700 font-light">Saturday, October 14</h2>
+      </div>
+      <ol class="">
+        {% event "Wedding" "10AM" %}
+        <p class="text-sm text-gray-800">
+          A traditional Canadian wedding ceremony to make it official (last time, we promise).
+        </p>
+        <p class="text-xs text-emerald-800 italic">Attire: Western</p>
+        <p class="text-xs text-emerald-800 italic">Theme: Autumn in Canada</p>
+        {% endevent %}
+
+        {% event "Check-out" "2PM" %}
+        <p class="text-sm text-gray-800">
+          Say goodbye for now, or join us for a <a class="underline hover:font-semibold"
+            href="/joint-reception/">reception in Delhi on Oct 15!</a>
+        </p>
+        {% endevent %}
+      </ol>
+    </div>
+  </div>
+</div>

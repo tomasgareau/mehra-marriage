@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-[#f9f9f7]">
+  <header class="px-3 py-2 flex flex-col sm:flex-row sm:justify-between">
+    <div class="flex justify-between items-center">
+      <p class="font-light text-xl text-red-900">{{ title }}</p>
+
+      <div id="hamburger" class="tham tham-e-squeeze tham-w-6 sm:hidden">
+        <div class="tham-box">
+          <div class="tham-inner bg-red-900"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="links" class="hidden sm:block">
+      <div class="flex flex-col gap-1 sm:flex-row">
+        <a class="text-sm block px-2 py-1 font-light text-red-900 rounded hover:bg-gray-100" href="/">home</a>
+        <a class="text-sm block px-2 py-1 font-light text-red-900 rounded hover:bg-gray-100" href="/dj-and-zahin/">digvijay & zahin</a>
+        <a class="text-sm block px-2 py-1 font-light text-red-900 rounded hover:bg-gray-100" href="/tomas-and-piiij/">tomas & aparajita</a>
+        <a class="text-sm block px-2 py-1 font-light text-red-900 rounded hover:bg-gray-100" href="/joint-reception/">joint reception</a>
+        <a class="text-sm block px-2 py-1 font-light text-red-900 rounded hover:bg-gray-100" href="/faq/">faq</a>
+      </div>
+    </div>
+
+  </header>
+
+  <div class="rotate-180">{% include '_banner.html' %}</div>
+
+  <main class="py-4">
+    {{ content }}
+  </main>
+
+  {% include '_banner.html' %}
+</body>
+
+<script>
+  const hamburger = document.querySelector("#hamburger");
+  const navLinks = document.querySelector("#links");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("tham-active");
+    navLinks.classList.toggle("hidden");
+  });
+</script>
+
+</html>

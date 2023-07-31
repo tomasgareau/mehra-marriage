@@ -1,13 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.html"
+    "./src/**/*.html",
+    "./.eleventy.js",
   ],
   theme: {
     extend: {},
   },
   plugins: [
-    require("tailwind-hamburgers")
+    require("tailwind-hamburgers"),
+    require("@tailwindcss/forms"),
   ],
 }
 
