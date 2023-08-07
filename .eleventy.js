@@ -19,21 +19,21 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addPairedShortcode("imageCard", function(data, src, title, imageSide) {
-    let rowDir = "md:flex-row";
-    let imageBorder = "md:rounded-l-lg"
-    let textBorder = "md:rounded-r-lg"
+    let rowDir = "sm:flex-row";
+    let imageBorder = "sm:rounded-l-lg"
+    let textBorder = "sm:rounded-r-lg"
 
     if (imageSide === "right") {
-      rowDir = "md:flex-row-reverse";
-      imageBorder = "md:rounded-r-lg"
-      textBorder = "md:rounded-l-lg"
+      rowDir = "sm:flex-row-reverse";
+      imageBorder = "sm:rounded-r-lg"
+      textBorder = "sm:rounded-l-lg"
     }
 
     return `
-      <div class="mx-auto max-w-xs shadow-lg border border-gray-200 rounded-lg bg-amber-50 md:flex ${rowDir} md:max-w-3xl">
-        <img class="object-cover rounded-t-lg md:rounded-none ${imageBorder} w-96 md:h-72 md:w-auto"
+      <div class="mx-auto max-w-xs shadow-lg border border-gray-200 rounded-lg bg-amber-50 sm:flex ${rowDir} sm:max-w-3xl">
+        <img class="object-cover rounded-t-lg sm:rounded-none ${imageBorder} w-96 sm:h-72 sm:w-auto"
           src="${src}" />
-        <div class="pt-3 px-5 pb-5 rounded-b-lg md:rounded-none ${textBorder} md:my-auto">
+        <div class="pt-3 px-5 pb-5 rounded-b-lg sm:rounded-none ${textBorder} sm:my-auto">
           <h5 class="text-2xl mb-2 font-light text-yellow-700">${title}</h5>
           ${data}
         </div>
