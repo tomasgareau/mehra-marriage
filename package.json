@@ -4,7 +4,8 @@
     "tailwind:watch": "tailwindcss -i ./src/css/styles.css -o ./dist/css/styles.css --watch",
     "watch": "npm run eleventy:watch & npm run tailwind:watch",
     "serve": "reload -d dist -w dist -b",
-    "dev": "npm run serve & npm run watch"
+    "dev": "npm run serve & npm run watch",
+    "build": "eleventy && tailwindcss -i ./src/css/styles.css -o ./dist/css/styles.css"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
