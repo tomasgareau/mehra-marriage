@@ -1,4 +1,7 @@
+const svgContents = require("eleventy-plugin-svg-contents");
+
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(svgContents);
 
   eleventyConfig.addPairedShortcode("event", function(data, title, time) {
     return `
