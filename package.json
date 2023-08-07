@@ -1,7 +1,7 @@
 {
   "scripts": {
     "eleventy:watch": "eleventy --watch",
-    "tailwind:watch": "nodemon --watch src --ext .html,.css --exec tailwindcss -i ./src/css/styles.css -o ./dist/css/styles.css",
+    "tailwind:watch": "tailwindcss -i ./src/css/styles.css -o ./dist/css/styles.css --watch",
     "watch": "npm run eleventy:watch & npm run tailwind:watch",
     "serve": "reload -d dist -w dist -b",
     "dev": "npm run serve & npm run watch"
