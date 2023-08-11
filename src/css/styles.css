@@ -4,7 +4,7 @@
 
 @layer base {
   h2 {
-    @apply text-lg text-white bg-red-900 py-1 px-2;
+    @apply text-lg text-white bg-red-800 py-1 px-2;
   }
   h3 {
     @apply text-lg text-yellow-700 mt-4 mb-1;
