@@ -9,7 +9,7 @@ title: tomas & aparajita
     <h2>Venue Details</h2>
 
     <div class="mx-3 mt-3">
-      <p class="text-lg text-yellow-700">Best Western Resort Country Club</p>
+      <h3>Best Western Resort Country Club</h3>
       <p class="text-xs text-gray-600">Pachgaon, Major District Road 132, near Manesar, Gurugram, Haryana 122015,
         India</p>
       <iframe class="max-w-md"
@@ -17,14 +17,14 @@ title: tomas & aparajita
         width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-      <h3>Getting There</h3>
+      <h4>Getting There</h4>
       <p class="text-sm text-gray-800">
         The venue is a 1.5 hour drive from the heart of Delhi. You can rent a car or use a rideshare app. See the <a
           class="font-medium underline hover:no-underline" href="/faq/#transportation">transportation section of the
           FAQ</a> for more info.
       </p>
 
-      <h3>Check-in/Check-out Times</h3>
+      <h4>Check-in/Check-out Times</h4>
       <p class="text-sm text-gray-800">We'll be organizing early check-in & late check-out for wedding guests.
 
       <ol class="mt-1">
@@ -38,7 +38,7 @@ title: tomas & aparajita
         </li>
       </ol>
 
-      <h3>Meals</h3>
+      <h4>Meals</h4>
       <p class="text-sm text-gray-800">
         It wouldn't be an Indian wedding if we didn't make sure you were stuffed for 90+% of the time you are with us.
       </p>
@@ -73,7 +73,7 @@ title: tomas & aparajita
         </li>
       </ol>
 
-      <h3>Amenities/Activities</h3>
+      <h4>Amenities/Activities</h4>
       <p class="text-sm text-gray-800">
         Between scheduled events, feel free to check out the following activities available at the resort.
       </p>
@@ -90,6 +90,19 @@ title: tomas & aparajita
         <li>Bike rentals</li>
         <li>Golf course (nearby, not at the hotel)</li>
       </ul>
+
+      <h3>The Pran</h3>
+      <p class="text-xs text-gray-600">17 Para, Panchgaon, Haryana 122103, India</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448858.30692552275!2d76.76849331352497!3d28.488413753345682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d3b24dbafd685%3A0xb0690f0297c7d757!2sThe%20Pran!5e0!3m2!1sen!2sca!4v1692153118181!5m2!1sen!2sca"
+        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h4>Getting There</h4>
+      <p class="text-sm text-gray-800">
+        This will be our venue for the <i>mehndi</i>. It's a 5-10 minute drive from our main venue (the Best Western)
+        and we will be arranging transportation for wedding guests on the day of the event.
+      </p>
+
     </div>
 
     <h2 class="mt-6">Itinerary</h2>
@@ -109,13 +122,14 @@ title: tomas & aparajita
         </p>
         {% endevent %}
 
-        {% event "Mehndi" "5PM" %}
+        {% eventWithVenue "Mehndi" "The Pran" "5PM" %}
         <p class="text-sm text-gray-800">
           Kick off the celebrations with henna, folk dances, cocktails, and a dinner of traditional Indian street food!
           This event will be Eid themed to introduce our out-of-country guests to this Indian festival.
         </p>
         <p class="text-xs text-emerald-800 italic">Attire: Indian or western, green & earth tones</p>
-        {% endevent %}
+        {% endeventWithVenue %}
+
       </ol>
 
       <h3 class="font-light border-b border-yellow-700 mx-auto text-center mb-4">Friday, October 13</h3>
