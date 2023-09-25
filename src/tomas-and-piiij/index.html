@@ -25,16 +25,16 @@ title: tomas & aparajita
       </p>
 
       <h4>Check-in/Check-out Times</h4>
-      <p class="text-sm text-gray-800">We'll be organizing early check-in & late check-out for wedding guests.
+      <p class="text-sm text-gray-800">We'll be organizing early check-in & late check-out for wedding guests.</p>
 
       <ol class="mt-1">
         <li class="text-sm text-gray-800 flex gap-2">
           <p class="font-bold text-emerald-800 w-20 text-right pr-1 border-r border-emerald-800">Check-in</p>
-          <p>10AM</p>
+          <p>11AM</p>
         </li>
         <li class="text-sm text-gray-800 flex gap-2">
           <p class="font-bold text-emerald-800 w-20 text-right pr-1 border-r border-emerald-800">Check-out</p>
-          <p>2PM</p>
+          <p>12PM</p>
         </li>
       </ol>
 
@@ -107,11 +107,13 @@ title: tomas & aparajita
 
     <h2 class="mt-6">Gifts/Registry</h2>
 
-    <p class="text-sm text-gray-800 mt-3">
-      <i>Please</i> don't feel that you need to bring a gift! Our packing space will be pretty limited for bringing
-      things back to Canada and you've spent enough just getting here -- the gift we'll cherish most is your company
-      &#x2764; &#x1F979;
-    </p>
+    <div class="mx-3 mt-3">
+      <p class="text-sm text-gray-800 mt-3">
+        <i>Please</i> don't feel that you need to bring a gift! Our packing space will be pretty limited for bringing
+        things back to Canada and you've spent enough just getting here -- the gift we'll cherish most is your company
+        &#x2764; &#x1F979;
+      </p>
+    </div>
 
     <h2 class="mt-6">Itinerary</h2>
 
@@ -123,10 +125,10 @@ title: tomas & aparajita
 
       <h3 class="font-light border-b border-yellow-700 mx-auto text-center mb-4">Thursday, October 12</h3>
       <ol class="">
-        {% event "Check-in" "10AM" %}
+        {% event "Arrival" "11AM" %}
         <p class="text-sm text-gray-800">
-          Arrive at the venue anytime after 10AM. Settle into your room, have lunch, and play traditional Indian lawn
-          games with the other guests!
+          Arrive at the venue anytime after 11AM. We'll get you into rooms as they become available. Settle into your 
+          room, have lunch, and play traditional Indian lawn games with the other guests!
         </p>
         {% endevent %}
 
@@ -157,7 +159,7 @@ title: tomas & aparajita
         <p class="text-xs text-emerald-800 italic">Attire: Indian or western, yellow or light tones</p>
         {% endevent %}
 
-        {% event "Baraat" "5PM" %}
+        {% event "Baraat" "4PM" %}
         <p class="text-sm text-gray-800">
           The groom's side will arrive at the wedding venue in a boisterous parade. Expect drums, dancing, singing, and
           a horse.
@@ -166,7 +168,7 @@ title: tomas & aparajita
           dance in later!</p>
         {% endevent %}
 
-        {% event "Shaadi" "6PM" %}
+        {% event "Shaadi" "5:30PM" %}
         <p class="text-sm text-gray-800">
           A traditional Indian wedding ceremony to make it official (again).
         </p>
@@ -183,7 +185,7 @@ title: tomas & aparajita
 
       <h3 class="font-light border-b border-yellow-700 mx-auto text-center mb-4">Saturday, October 14</h3>
       <ol class="">
-        {% event "Breakfast" "7AM-11AM" %}
+        {% event "Breakfast" "7AM-10AM" %}
         <p class="text-sm text-gray-800">
           Take advantage of the hotel buffet to have some breakfast before the day's events.
         </p>
@@ -191,13 +193,18 @@ title: tomas & aparajita
 
         {% event "Wedding" "10AM" %}
         <p class="text-sm text-gray-800">
-          A traditional Canadian wedding ceremony to make it official (last time, we promise), followed by lunch &
-          drinks.
+          A traditional Canadian wedding ceremony to make it official (last time, we promise).
         </p>
         <p class="text-xs text-emerald-800 italic">Attire: Western</p>
         {% endevent %}
 
-        {% event "Check-out" "2PM" %}
+        {% event "Check-out" "12PM" %}
+        <p class="text-sm text-gray-800">
+          Zip back to your rooms to change & check-out, then come join us for one last lunch.
+        </p>
+        {% endevent %}
+
+        {% event "Goodbye Lunch" "12:30PM" %}
         <p class="text-sm text-gray-800">
           Say goodbye for now, or join us for a <a class="font-medium underline hover:no-underline"
             href="/reception/">reception in Delhi on Oct 15!</a>
